@@ -8,6 +8,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: "axelaaronpalacioz-star.github.is",
+  site: "https://axelaaronpalacioz-star.github.io",
   base: "/vacunacion",
 });
