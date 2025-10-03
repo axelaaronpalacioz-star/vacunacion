@@ -1,24 +1,26 @@
 ---
+const base = import.meta.env.BASE_URL;
+
 import { bigint } from "astro:schema"
 
 const benefits =[
     {
-        img:"/img/minus.png",
+        img:`${base}/img/minus.png`,
         title: "Minimize the spread of viruses",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, facilis placeat magnam temporibus nulla omnis modi ea consequatur corporis asperiores tempora quis quas rerum beatae reiciendis sunt quos saepe aperiam!"
     },
     {
-        img:"/img/escudo.png",
+        img:`${base}/img/escudo.png`,
         title: "Forming atbodies",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, facilis placeat magnam temporibus nulla omnis modi ea consequatur corporis asperiores tempora quis quas rerum beatae reiciendis sunt quos saepe aperiam!"
     },
     {
-        img:"/img/users.png",
+        img:`${base}/img/users.png`,
         title: "Protecting peopke nearby",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, facilis placeat magnam temporibus nulla omnis modi ea consequatur corporis asperiores tempora quis quas rerum beatae reiciendis sunt quos saepe aperiam!"
     },
     {
-        img:"/img/grafico.png",
+        img:`${base}/img/grafico.png`,
         title: "Crating group immunity",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, facilis placeat magnam temporibus nulla omnis modi ea consequatur corporis asperiores tempora quis quas rerum beatae reiciendis sunt quos saepe aperiam!"
     }
