@@ -7,5 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
+  site: "axelaaronpalacioz-star.github.is",
+  base: "/vacunacion",
 });

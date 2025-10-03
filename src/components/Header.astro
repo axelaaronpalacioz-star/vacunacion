@@ -1,0 +1,77 @@
+<header
+  class="fixed top-0 left-0 w-full bg-white/85 backdrop-blur-sm z-50 flex justify-between items-center px-6
+lg:px-12 py-4 shadow-md"
+>
+  <span class="text-[#2a6efc] text-2xl
+font-extrabold">Vacunacion</span>
+  <button id="menu-toggle" class="lg:hidden text-gray-700
+focus:outline-none">
+    <svg
+      class="h-7 w7"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"></svg>
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M4 6h16M4 12h16m-7 6h7"></path>
+  </button>
+  <nav
+    id="menu"
+    class="hidden lg:block absolute lg:static
+        top-full left-0 w-full lg:w-auto bg-white/95 lg:bg-transparent
+        shadow-lg lg:shadow-none transition-all duration-300 ease-in-out"
+  >
+    <ul class="flex flex-col lg:flex-row items-center lg:gap-12
+  p-4 lg:p-0">
+      <li>
+        <a
+          href=""
+          class="block py-2 text-gray-700 font-semibold hover:text[2#a6efc] transition"
+          >Database</a>
+      </li>
+      <li>
+        <a
+          href=""
+          class="block py-2 text-gray-700 font-semibold hover:text[2#a6efc] transition"
+        >Education</a>
+      </li>
+      <li>
+        <a
+          href=""
+          class="block py-2 text-gray-700 font-semibold hover:text[2#a6efc] transition"
+        >News</a>
+      </li>
+      <li>
+        <a
+          href=""
+          class="block py-2 text-gray-700 font-semibold hover:text[2#a6efc] transition"
+        >Regulation</a>
+      </li>
+
+        <li class="mt-4 lg:mt-0">
+            <a href="" class="bg-[#2a6efc] text-white font-semibold px-5 py-2 rounded-md shadow-lg hover:text-[#1e54c7] transition">Hoax Buster</a>
+        </li>
+
+    </ul>
+  </nav>
+</header>
+
+<script>
+	const toogleButton = document.getElementById("menu-toggle");
+	const menu = document.getElementById("menu");
+
+	toogleButton?.addEventListener("click", ()=>{
+		menu?.classList.toggle("hidden");
+	});
+
+	window.addEventListener("resize", () =>{
+		if(window.innerWidth > 1024){
+			menu?.classList.remove("hidden");
+		}else if(!menu?.classList.contains("hidden")){
+
+		}
+	});
+</script>
